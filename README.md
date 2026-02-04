@@ -5,17 +5,15 @@ A practical toolkit for building and running custom AI evaluations - from basic 
 This toolkit provides battle-tested evaluation methods for measuring LLM performance across different tasks. Whether you're building domain-specific benchmarks or need rigorous model comparisons, these tools help you create reproducible, meaningful evaluations.
 
 # Quick Start
+
 Install dependencies
-pip install -r requirements.txt
-
+* pip install -r requirements.txt
 Run a basic evaluation
-python examples/basic_eval.py
-
+* python examples/basic_eval.py
 Run LLM-as-a-judge evaluation
-python examples/llm_judge_eval.py
-
+* python examples/llm_judge_eval.py
 Generate evaluation report
-python tools/generate_report.py results/
+* python tools/generate_report.py results/
 
 # Evaluation Types
 
@@ -37,11 +35,11 @@ python tools/generate_report.py results/
 * Reasoning: Multi-step problem solving
 * Safety: Harmful content detection
 
-📚 Key Concepts
+# Key Concepts
 LLM-as-a-Judge
 Uses one LLM to evaluate the outputs of another LLM. This approach scales beyond human evaluation while maintaining quality assessment. The judge LLM receives the original prompt, the response to evaluate, and scoring criteria, then provides structured feedback and numerical scores.
 
-📊 Example Results
+# Example Results
 Security Compliance Evaluation Results:
 ┌─────────────────┬─────────┬──────────┬─────────┐
 │ Model           │ Accuracy│ Precision│ Recall  │
