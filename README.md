@@ -2,11 +2,11 @@
 
 A practical toolkit for building and running custom AI evaluations - from basic template matching to model-graded assessments.
 
-## 🎯 Overview
+## Overview
 
 This toolkit provides battle-tested evaluation methods for measuring LLM performance across different tasks. Whether you're building domain-specific benchmarks or need rigorous model comparisons, these tools help you create reproducible, meaningful evaluations.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -22,7 +22,7 @@ python examples/llm_judge_eval.py
 python tools/generate_report.py results/
 ```
 
-## 📋 Evaluation Types
+## Evaluation Types
 
 ### 1. Basic Template Evals
 - **Match**: Exact string matching
@@ -42,7 +42,7 @@ python tools/generate_report.py results/
 - **Reasoning**: Multi-step problem solving
 - **Safety**: Harmful content detection
 
-## 🛠 Core Components
+## Core Components
 
 - `evaluators/` - Evaluation engine implementations
 - `datasets/` - Sample datasets and schemas
@@ -50,12 +50,12 @@ python tools/generate_report.py results/
 - `examples/` - Complete evaluation workflows
 - `templates/` - Reusable evaluation templates
 
-## 📚 Key Concepts
+## Key Concepts
 
 ### LLM-as-a-Judge
 Uses one LLM to evaluate the outputs of another LLM. This approach scales beyond human evaluation while maintaining quality assessment. The judge LLM receives the original prompt, the response to evaluate, and scoring criteria, then provides structured feedback and numerical scores.
 
-## 📊 Example Results
+## Example Results
 
 ```
 Security Compliance Evaluation Results:
@@ -67,22 +67,3 @@ Security Compliance Evaluation Results:
 │ gpt-3.5-turbo   │   87.3% │    85.2% │   89.4% │
 └─────────────────┴─────────┴──────────┴─────────┘
 ```
-
-## 🎓 Getting Started
-
-Check out the [examples/](examples/) directory for:
-- Basic evaluation setup
-- Custom dataset creation
-- Model-graded evaluation implementation
-- Benchmark comparison workflows
-
-## 📖 Documentation
-
-- [Evaluation Design Guide](docs/evaluation-design.md)
-- [LLM-as-a-Judge Best Practices](docs/llm-judge-evals.md)
-- [Dataset Creation](docs/dataset-creation.md)
-- [API Reference](docs/api-reference.md)
-
----
-
-Built by [Jonathan Haas](https://haasonsaas.com) - AI Evaluation Specialist
