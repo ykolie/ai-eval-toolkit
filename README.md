@@ -5,16 +5,16 @@ A practical toolkit for building and running custom AI evaluations - from basic 
 This toolkit provides battle-tested evaluation methods for measuring LLM performance across different tasks. Whether you're building domain-specific benchmarks or need rigorous model comparisons, these tools help you create reproducible, meaningful evaluations.
 
 # Quick Start
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
 
-# Run a basic evaluation
+Run a basic evaluation
 python examples/basic_eval.py
 
-# Run LLM-as-a-judge evaluation
+Run LLM-as-a-judge evaluation
 python examples/llm_judge_eval.py
 
-# Generate evaluation report
+Generate evaluation report
 python tools/generate_report.py results/
 
 # Evaluation Types
